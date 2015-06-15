@@ -47,7 +47,7 @@ $ bower install
 $ php -S localhost:9000
 ```
 
-Flux keyMirror，我是透過 define 的方式將它們包起來，就可以使用。
+keyMirror，我是透過 define 的方式將它們包起來，就可以使用。
 
 keyMirror.js
 
