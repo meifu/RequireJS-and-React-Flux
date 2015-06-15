@@ -1,8 +1,8 @@
 # RequireJs-React-Flux
 
-透過 RequireJS 的方式進行 React & Flux,
+透過 RequireJS 的方式進行 React & Flux，
 
-我們先用 todos 範例來做 Demo, 好像可以用, 您可以試試看。
+我們先用 todos 範例來做 Demo，好像可以用，您可以試試看。
 
 Example
 
@@ -47,11 +47,11 @@ $ bower install
 $ php -S localhost:9000
 ```
 
-Flux 會用到 Node EventEmmit, keyMirror, classSet,
+Flux 會用到 Node EventEmmit，keyMirror，classSet,
 
-我有找到 EventEmmit 的 Bower 套件, keyMirror 跟 classSet 
+我有找到 EventEmmit 的 Bower 套件，keyMirror 跟 classSet 
 
-我是透過 define 的方式將它們包起來, 就可以使用。
+我是透過 define 的方式將它們包起來，就可以使用。
 
 keyMirror.js
 
@@ -106,9 +106,9 @@ define('cx', function () {
 });
 ```
 
-Flux 會用到 Dispatcher, Constants, Actions, Store, 所以我將它設定在 config.js 中這樣您就可以在專案中任意的 require 進來。
+Flux 會用到 Dispatcher，Constants，Actions，Store，所以我將它設定在 config.js 中這樣您就可以在專案中任意的 require 進來。
 
-另外可以寫 .jsx, 只需要在 require 中定義 jsx!component/YOUR_COMPNENTS.jsx,
+另外可以寫 .jsx，只需要在 require 中定義 jsx!component/YOUR_COMPNENTS.jsx，
 可以寫 ES6 語法 。
 
 config.js
@@ -163,6 +163,8 @@ $ r.js -o build.js
 
 # 備註
 
-若您不想去設定太多 Task Runner, 您或許可以試試看這個方式, 主要還是在設定 RequireJS config.js 就可以去寫作 React & Flux, 或許會有其他問題, 來信告知我, 謝謝。
+您因該還是要透過 Webpack 來設定您的專案，
+若您不想去設定太多 Task Runner, 您或許可以試試看這個方式，
+主要還是在設定 RequireJS config.js 就可以去寫作 React & Flux，或許會有其他問題， 來信告知我, 謝謝。
 
 
