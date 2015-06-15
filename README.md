@@ -1,5 +1,4 @@
 # RequireJs-React-Flux
--
 
 透過 RequireJS 的方式進行 React & Flux,
 
