@@ -1,15 +1,15 @@
 # RequireJs-React-Flux
 
-透過 RequireJS 的方式進行 React & Flux，
+This is a React + Flux application which implemented with RequireJS.
 
-我們先用 todos 範例來做 Demo，好像可以用，您可以試試看。
+We use [todos example from the official website](https://github.com/facebook/flux/tree/master/examples/flux-todomvc/) and it seems to work. You can give it a try.
 
 Example
 
 ![http://i.imgur.com/1zBvCEq.png?1](http://i.imgur.com/1zBvCEq.png?1)
 
 
-# 安裝方式
+# Install
 
 .bowerrc
 
@@ -39,13 +39,17 @@ $ bower install
 ```
 
 
-# 使用方式
+# Usage
 
-打開您的 Server, 我是用 PHP, 您也可以用其他方式進行 ( SimpleHTTPServer )
+Run your local server.
+
+I use PHP server. (You can use other ways, like: Python's Simple HTTPServer) 
 
 ```
 $ php -S localhost:9000
 ```
+
+Flux will need `Node EventEmmit`,  `keyMirror`. But we are not in node environment(no npm) so these modules must be packaged in another way.
 
 keyMirror，我是透過 define 的方式將它們包起來，就可以使用。
 
