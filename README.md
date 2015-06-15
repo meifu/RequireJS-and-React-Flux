@@ -11,7 +11,7 @@ Example
 
 
 # 安裝方式
----
+--
 
 .bowerrc
 
