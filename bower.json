@@ -1,0 +1,22 @@
+{
+  "name": "RequireJS-and-React-Flux",
+  "version": "0.0.0",
+  "authors": [
+    "Hamm Huang <hhuang@beefdaddy.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs-react-jsx": "~0.14.1",
+    "requirejs": "~2.1.17",
+    "flux": "~2.0.2",
+    "eventEmitter": "~4.2.11",
+    "underscore": "~1.8.3"
+  }
+}
