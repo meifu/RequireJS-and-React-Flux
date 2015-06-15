@@ -51,7 +51,7 @@ Flux 會用到 Node EventEmmit, keyMirror, classSet,
 
 我有找到 EventEmmit 的 Bower 套件, keyMirror 跟 classSet 
 
-我是透過 defined 的方式將它們包起來, 就可以使用。
+我是透過 define 的方式將它們包起來, 就可以使用。
 
 keyMirror.js
 
