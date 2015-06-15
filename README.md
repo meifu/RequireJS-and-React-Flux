@@ -10,7 +10,6 @@ Example
 
 
 # 安裝方式
---
 
 .bowerrc
 
@@ -41,7 +40,6 @@ $ bower install
 
 
 # 使用方式
----
 
 打開您的 Server, 我是用 PHP, 您也可以用其他方式進行 ( SimpleHTTPServer )
 
@@ -155,7 +153,7 @@ requirejs.config({
 
 
 # Building
----
+
 最後您可以透過 r.js 打包專案
 
 ```
