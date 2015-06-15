@@ -14,9 +14,7 @@ var React = require('react');
 var ReactPropTypes = React.PropTypes;
 var TodoActions = require('TodoActions');
 var TodoTextInput = require('jsx!components/TodoTextInput.react');
-
-var cx = require('cx');
-
+var cx = new require('react').addons.classSet;
 var TodoItem = React.createClass({
 
   propTypes: {

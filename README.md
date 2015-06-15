@@ -47,11 +47,7 @@ $ bower install
 $ php -S localhost:9000
 ```
 
-Flux 會用到 Node EventEmmit，keyMirror，classSet,
-
-我有找到 EventEmmit 的 Bower 套件，keyMirror 跟 classSet 
-
-我是透過 define 的方式將它們包起來，就可以使用。
+Flux keyMirror，我是透過 define 的方式將它們包起來，就可以使用。
 
 keyMirror.js
 
@@ -74,41 +70,8 @@ define('keyMirror', function () {
 });
 ```
 
-classSet.js
-
-```
-define('cx', function () {
-  function cx(classNames) {
-    var names = '';
-
-    if (typeof classNames == 'object') {
-      for (var name in classNames) {
-        if (!classNames.hasOwnProperty(name) || !classNames[name]) {
-          continue;
-        }
-        names += name + ' ';
-      }
-    } else {
-      for (var i = 0; i < arguments.length; i++) {
-        // We should technically exclude 0 too, but for the sake of backward
-        // compat we'll keep it (for now)
-        if (arguments[i] == null) {
-          continue;
-        }
-        names += arguments[i] + ' ';
-      }
-    }
-
-    return names.trim();
-  }
-
-  return cx;
-});
-```
-
 Flux 會用到 Dispatcher，Constants，Actions，Store，所以我將它設定在 config.js 中這樣您就可以在專案中任意的 require 進來。
-
-另外可以寫 .jsx，只需要在 require 中定義 jsx!component/YOUR_COMPNENTS.jsx，
+另外可以寫 .jsx，只需要在 require 中定義 jsx!components/XXX.jsx，
 可以寫 ES6 語法 。
 
 config.js
@@ -125,7 +88,6 @@ requirejs.config({
         'EventEmitter': 'vendor/eventEmitter/EventEmitter',
         'underscore': 'vendor/underscore/underscore',
         'keyMirror': 'keyMirror',
-        'cx': 'classSet',
         'TodoStore': 'stores/TodoStore',
         'AppDispatcher': 'dispatcher/AppDispatcher',
         'TodoConstants': 'constants/TodoConstants',

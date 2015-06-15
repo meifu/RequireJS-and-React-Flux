@@ -10,7 +10,6 @@ requirejs.config({
         'underscore': 'vendor/underscore/underscore',
         // for React Flux
         'keyMirror': 'keyMirror',
-        'cx': 'classSet',
         'TodoStore': 'stores/TodoStore',
         'AppDispatcher': 'dispatcher/AppDispatcher',
         'TodoConstants': 'constants/TodoConstants',
