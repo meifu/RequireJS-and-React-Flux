@@ -74,15 +74,11 @@ define('keyMirror', function () {
 });
 ```
 
-`Dispatch`, `Constants`, `Actions`, `Store` will be used in Flux. To require them easier, I use `config.js` to set up the paths of these modules.
+`Dispatch`, `Constants`, `Actions`, `Store` will be used in Flux. The paths of these modules were defined in config.js then I can require them anywhere easily.
 
 In order to write .jsx for react.js components, I need to define `jsx!components/XXX.jsx` in require.
 
-You can use ES6 syntax in this application.
-
-Flux 會用到 Dispatcher，Constants，Actions，Store，所以我將它設定在 config.js 中這樣您就可以在專案中任意的 require 進來。
-另外可以寫 .jsx，只需要在 require 中定義 jsx!components/XXX.jsx，
-可以寫 ES6 語法 。
+You can write ES6 syntax in this application.
 
 config.js
 
@@ -128,7 +124,7 @@ requirejs.config({
 
 最後您可以透過 r.js 打包專案
 
-You can use r.js to wrap/bundle your application.
+You can use r.js (RequireJS) to bundle your application.
 
 ```
 $ r.js -o build.js
@@ -137,16 +133,11 @@ $ r.js -o build.js
 
 # Notes
 
-It should be better to set up your application through Webpack.
+It should be better to set up your application through [Webpack](http://webpack.github.io/).
 
-But if your don't want to set up complicated config for using the Task Runner, you can try this application which don't need any Task Runner.
+But if you don't want to use complicated config for Task Runner(Grunt/Gulp), you can try this application which don't need any Task Runner.
 
-In this applicaion, I mainly focus on set up RequireJS config.js. So I can start writing React/Flux quickly.
+In this applicaion, I can start writing React/Flux quickly. Just after setting up the config.js for RequireJS which doesn't need much time.
 
 If you encounter other questions, please email me. Thank you.
-
-您因該還是要透過 Webpack 來設定您的專案，
-若您不想去設定太多 Task Runner, 您或許可以試試看這個方式，
-主要還是在設定 RequireJS config.js 就可以去寫作 React & Flux，或許會有其他問題， 來信告知我, 謝謝。
-
 
